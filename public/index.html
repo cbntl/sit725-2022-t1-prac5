@@ -1,35 +1,172 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIT725 CBNTL WEEK3 PRAC</title>
 
-  <title>SIT 725 Prac 1</title>
-  <meta name="description" content="Hello Template for SIT 725 Prac 1">
-  <meta name="author" content="Claire Bantilan">
-
-  <meta property="og:title" content="SIT 725 Prac 1">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Hello Template for SIT 725 Prac 1">
-
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h1 id="heading" class="center-align">SIT 725</h1>
-            </div>
-            <div class="col s12 center-align">
-                <a class="waves-effect waves-light btn" onclick="changeText()">Change Text</a>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo"><img class="user-image-size" src="images/logo.png" /></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://www.linkedin.com/in/claire-bantilan-9aa78690/">LinkedIn</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="https://www.linkedin.com/in/claire-bantilan-9aa78690/">LinkedIn</a></li>
+                <li><a href="https://github.com/cbntl/">Github</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center black-text text-lighten-2"><b>WELCOME TO SIT725</b></h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">This is CBNTL's Week 3 Practical Result</h5>
+                </div>
+                <div class="row center">
+                    <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
+                        data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
+                </div>
+                <br><br>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="row modal-content">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 center-align">
+                                    <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="parallax"><img src="images/beach2.jpg" alt="Unsplashed background img 1"></div>
     </div>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/script.js"></script>
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Modal Enabled</h5>
+
+                        <p class="light">Click on the Click Me Button for a suprise.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Fill up Form</h5>
+
+                        <p class="light">Utilizing Modal by integrating a form for user's input.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Submit!</h5>
+
+                        <p class="light">Data will be reflected in console for potential back-end processing.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Created for Applied Software Engineering unit.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/beach2.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Get to know me</h4>
+                    <p class="left-align light">I am a student in Deakin University Burwood. I am currently studying
+                        Masters in Information Technology (Professional). I am currently enrolled to SIT725 and this is
+                        my week 3 practical website. You can clone my github repo via
+                        https://github.com/cbntl/sit725-2022-t1-prac3.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">100% Materialized.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/beach3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
+
 </html>
