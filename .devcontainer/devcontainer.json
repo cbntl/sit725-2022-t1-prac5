@@ -1,0 +1,20 @@
+{
+    "name": "JS ENV",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "runArgs": ["-u", "node"],
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "zsh": {
+              "path": "/usr/bin/zsh"
+            }
+          },
+          "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "postCreateCommand": "npm install",
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "wesbos.theme-cobalt2"
+    ]
+
+}
